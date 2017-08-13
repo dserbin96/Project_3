@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/post_image_height"
+        android:id="@+id/post_img"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sml"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/lenta_item_horiz"
+        android:layout_marginRight="@dimen/lenta_item_horiz"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/post_user_img"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:src="@drawable/sml"
+            app:border_width="1dp"
+            app:border_color="@color/colorAccent"
+            android:layout_alignParentStart="true"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/post_like"
+            android:orientation="horizontal"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:id="@+id/post_like_img"
+                app:srcCompat="@drawable/like_24dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/min_margin"
+                android:id="@+id/post_count_like"
+                android:text="@string/zero"
+                android:textSize="16sp"
+                android:fontFamily="@string/fontFamily"
+                android:layout_gravity="center"
+                tools:layout_marginRight="@dimen/min_margin"
+                tools:layout_marginLeft="@dimen/min_margin" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/min_paddin"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/post_user_img">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/min_margin"
+                android:text="@string/no_user"
+                android:id="@+id/post_user_name"
+                android:fontFamily="@string/fontFamily"
+                android:textColor="@color/textLenta"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/post_date"
+                android:text="@string/date_default"
+                android:fontFamily="@string/fontFamily"
+
+                android:textSize="10dp"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/min_margin"
+        android:id="@+id/post_description"
+        android:fontFamily="@string/fontFamily"
+        android:text="@string/description"
+        android:textColor="@color/textLenta"/>
+
+</LinearLayout>

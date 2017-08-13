@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_user"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.dns.project_3.ui.activity.UserActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:id="@+id/post_user_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/sml" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="?attr/actionBarSize"
+                android:orientation="vertical"
+                android:weightSum="3"
+                android:layout_gravity="center_horizontal"
+                app:layout_collapseMode="parallax">
+
+                    <TextView
+                        android:id="@+id/frand_nikname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@string/fontFamily"
+                        android:text="@string/nickname"
+                        android:textColor="@color/textProfle"
+                        android:textSize="@dimen/urer_size"
+                        android:drawableStart="@drawable/nickname"
+                        android:padding="@dimen/user_text_padding"
+                        />
+
+                    <TextView
+                        android:id="@+id/frand_fio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/fio_img"
+                        android:fontFamily="@string/fontFamily"
+                        android:padding="@dimen/user_text_padding"
+                        android:text="@string/fio"
+                        android:textColor="@color/textProfle"
+                        android:textSize="@dimen/urer_size" />
+
+                    <TextView
+                        android:id="@+id/frand_dept"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/dept_img"
+                        android:fontFamily="@string/fontFamily"
+                        android:padding="@dimen/user_text_padding"
+                        android:text="@string/dept"
+                        android:textColor="@color/textProfle"
+                        android:textSize="@dimen/urer_size" />
+
+                    <TextView
+                        android:id="@+id/frand_statys"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/statys_img"
+                        android:fontFamily="@string/fontFamily"
+                        android:padding="@dimen/user_text_padding"
+                        android:text="@string/statys"
+                        android:textColor="@color/textProfle"
+                        android:textSize="@dimen/urer_size" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/frend_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/frand_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/min_margin"
+        android:background="@color/backgroundLenta"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</android.support.design.widget.CoordinatorLayout>

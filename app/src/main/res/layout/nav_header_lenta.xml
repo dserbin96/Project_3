@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@drawable/side_nav_bar"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/novig_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/stark"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/naw_header_padding"
+        android:paddingLeft="@dimen/naw_header_padding"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/lenta_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nicknames"
+            android:textColor="@android:color/primary_text_dark" />
+
+        <TextView
+            android:id="@+id/lenta_statys"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/statys"
+            android:textColor="@android:color/primary_text_dark"/>
+    </LinearLayout>
+
+</RelativeLayout>

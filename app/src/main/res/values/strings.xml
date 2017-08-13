@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">SML</string>
+
+    <string name="login"> Телефон</string>
+    <string name="pass">Код</string>
+    <string name="login_value">Введите номер</string>
+    <string name="pass_value">Введите код</string>
+    <string name="auth_button">Войти</string>
+
+    <string name="avatar">Фото</string>
+    <string name="fio">ФИО</string>
+    <string name="dept">Отдел</string>
+    <string name="sex">Пол</string>
+    <string name="statys">Статус</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="delete">Удалить</string>
+    <string name="profile_menu_edit">изменить</string>
+    <string name="profile_menu_done">сохранить</string>
+    <string name="nomber">+7</string>
+
+    <string-array name="sex_value">
+        <item>мужской</item>
+        <item>женский</item>
+    </string-array>
+
+    <string-array name="dept_value">
+        <item>продаж</item>
+        <item>тестирования</item>
+        <item>разработки</item>
+    </string-array>
+    <string name="title_activity_lenta">Лента</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="top_today">Топ 10 за сегодня</string>
+    <string name="top">Топ 10</string>
+    <string name="top_week">Топ 10 за неделю</string>
+    <string name="new_post_title">Заголовок</string>
+    <string name="new_post_desc">Описание</string>
+
+    <string name="profile">Профиль</string>
+    <string name="my_lenta">Мои записи</string>
+    <string name="settings">Параметры</string>
+    <string name="setting">Настройки</string>
+
+    <string name="lenta">Лента</string>
+    <string name="add_img">Добавить изображение?</string>
+    <string name="no_name">без названия</string>
+    <string name="no_user">нет пользователя</string>
+    <string name="date_default">01.01.2011</string>
+    <string name="zero">0</string>
+    <string name="description">Описание</string>
+    <string name="nicknames">Имя</string>
+
+    <string-array name="foto_value">
+        <item>Фото с камеры</item>
+        <item>Фото с галереи</item>
+        <item>Удалить фото</item>
+    </string-array>
+
+    <string name="change_photo">Изменить фотографию</string>
+    <string name="count_pub">Публикаций:</string>
+    <string name="nickname">Никнэйм</string>
+    <string name="fontFamily">serif</string>
+</resources>
